@@ -37,8 +37,11 @@ const getPayload = req => ({
   tid: req.query.tid,
   cid: req.session.id,
   t: "pageview",
-  dh: req.query.host,
-  dp: req.query.page
+  dh: "vmssolutions.notion.site",
+  uip: "211.47.75.52", 
+  cn: "TechDoc",
+  dp: req.query.page,
+  dt: req.query.title
 });
 
 const exit = res =>
